@@ -1,0 +1,46 @@
+GRID SEARCH
+
+Round 1:
+{
+	'activation': 'tanh', 
+	'alpha': 0.0001,
+	'hidden_layer_sizes': (15, 30, 30, 15), 
+	'learning_rate': 'constant', 
+	'solver': 'adam'
+}
+
+Round 2: 
+
+{
+	'activation': 'relu', 
+	'alpha': 0.0001, 
+	'hidden_layer_sizes': (15, 30, 50, 30, 15), 		'learning_rate': 'constant', 
+	'solver': 'adam'
+}
+
+Round 3:
+{
+	'activation': 'relu', 
+	'alpha': 0.0005, 
+	'hidden_layer_sizes': (20, 40, 60, 40, 20), 
+	'learning_rate': 'constant', 
+	'solver': 'adam'
+}
+
+Round 4: 
+{
+	'activation': 'relu', 
+	'alpha': 0.0001, 
+	'hidden_layer_sizes': (40, 60, 80, 60, 40), 
+	'learning_rate': 'constant', 
+	'solver': 'adam'
+}
+
+precision    recall  f1-score   support
+
+        left       0.79      0.87      0.83       812
+       right       0.88      0.80      0.84       954
+
+    accuracy                           0.84      1766
+   macro avg       0.84      0.84      0.84      1766
+weighted avg       0.84      0.84      0.84      1766
